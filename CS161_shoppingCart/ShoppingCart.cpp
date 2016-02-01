@@ -35,8 +35,8 @@ void ShoppingCart::addItem(Item *itemToAdd)
 	//add an item's memory position to the array using arrayEnd for the correct position in the array
 	arrayOfItems[arrayEnd] = itemToAdd;
 	arrayEnd++;
-	//cout << "The address just stored to the arrayOfItems is: " << itemToAdd << endl;
-	//system("pause");
+	cout << "The address just stored to the arrayOfItems is: " << itemToAdd << endl;
+	system("pause");
 }
 
 //function to return the total cost of all items in the cart
@@ -50,8 +50,8 @@ double ShoppingCart::totalPrice()
 		LineItemTotal = currentLineItem.getPrice() * currentLineItem.getQuantity();
 		total = total + LineItemTotal;
 
-		//cout << "Line Item Total is: " << LineItemTotal << endl;
-		//cout << "Running Total is: " << total << endl;
+		cout << "Line Item Total is: " << LineItemTotal << endl;
+		cout << "Running Total is: " << total << endl;
 	}
 	return total;
 }
